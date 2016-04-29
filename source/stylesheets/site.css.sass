@@ -58,8 +58,11 @@ h2
   +pad
   height: 30rem
 
-.image-holder
+.image-holder--grey
   background-color: rgba(105, 105, 105, .1)
+
+.text
+  +pad
 
 .image-block
   display: flex
@@ -71,13 +74,19 @@ h2
     width: 50%
     height: 100%
 
-    img
+    &.full-width img
       width: 100%
 
   .text
-    +pad
     width: 50%
     height: 100%
+
+.image-block--footer
+
+  .image
+    text-align: right
+  .text
+    max-width: 35rem
 
 .text-holder
   -webkit-transform: translateY(-50%)
@@ -86,3 +95,20 @@ h2
   position: relative
   top: 50%
 
+section.blue
+  background-color: rgba(15, 220, 212, .2)
+
+.image-block-single
+  text-align: center
+
+  .image
+    width: 100%
+
+    img
+      margin: 0 auto
+
+footer
+  background: #CDAF95
+
+.container.footer
+  padding: 5rem 2.35765%
