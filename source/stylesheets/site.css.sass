@@ -7,13 +7,82 @@
 @import header
 
 body
-  background: #ECC561
   text-align: center
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-size: 1em
 
+.container
+  +outer-container(100%)
+  +pad
+  width: 1200px
+  margin: 0 auto
+
+img
+  max-width: 100%
+  max-height: 100%
+
 h1
-  color: rgba(0,0,0,0.5)
-  font-size: 1.8em
+  font-size: 2.8em
   font-weight: 400
   margin: 0
+
+p
+  max-width: 50rem
+  margin: 0 auto 0.75em
+
+.desc
+  text-transform: uppercase
+  color: #777
+
+.artist-block
+  +pad
+
+section
+  +outer-container(100%)
+  background-color: rgba(105, 105, 105, .1)
+.white
+  background-color: white
+
+.section-header
+  +pad
+
+h2
+  font-size: 2rem
+  margin-bottom: 0
+
+.series-block
+  float: left
+  width: (100% / 3)
+
+.series-image
+  +pad
+  height: 30rem
+
+.image-holder
+  background-color: rgba(105, 105, 105, .1)
+
+.image-block
+  display: flex
+  width: 100%
+  height: 25rem
+  text-align: left
+
+  .image
+    width: 50%
+    height: 100%
+
+    img
+      width: 100%
+
+  .text
+    +pad
+    width: 50%
+    height: 100%
+
+.text-holder
+  -webkit-transform: translateY(-50%)
+  -moz-transform: translateY(-50%)
+  transform: translateY(-50%)
+  position: relative
+  top: 50%
+

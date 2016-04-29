@@ -2,7 +2,62 @@
 title: Jeanette Gunnarsson
 ---
 
-.welcome
-  .logo
+.container
+  .artist-block
+    %h1 Jeanette Gunnarsson
 
-  %h1 Jeanette Gunnarsson
+    %p.desc Some text about the artist, so
+
+    %p
+      You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water.
+      We swallow it too fast, we choke.
+
+%section
+  .container.series
+    .section-header
+      %h2 Three little paintings
+      %p.desc March - April 2015
+
+    .series-block
+      .series-image
+        = image_tag '3.jpg'
+      .series-text
+        %p have some blurb about this painting
+    .series-block
+      .series-image
+        = image_tag '4.jpg'
+      .series-text
+        %p have some blurb about this painting
+    .series-block
+      .series-image
+        = image_tag '5.jpg'
+      .series-text
+        %p have some blurb about this painting
+
+%section.white
+  .container.series
+    .section-header
+      %h2 One and One is Two
+      %p.desc February 2015
+    .image-holder
+      .image-block
+        .image
+          = image_tag '8.jpg'
+        .text
+          .text-holder
+            %h4 Some text about the image or painting.
+            %p
+              Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine.
+              You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water.
+              We swallow it too fast, we choke.
+      .image-block
+        .text
+          .text-holder
+            %h4 Some text about the image or painting.
+            %p
+              Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine.
+              You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water.
+              We swallow it too fast, we choke.
+        .image
+          = image_tag '7.jpg'
+
